@@ -1,1 +1,18 @@
+<h1>MAKE A NEW PRODUCT!!!!! OMG</h1>
 
+<% form_for @product do each |f|%>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :price %>
+<%= f.text_field :price %>
+<%= f.label :descripton %>
+<%= f.text_field :description %>
+<%= f.label :inventory %>
+<%= f.number_field :inventory %>
+<%= f.submit "submit"%>
+<% end %>
+
+
+
+
+<!-- name, price, description, inventory -->
